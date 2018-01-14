@@ -17,9 +17,90 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If I go to bed now, what time should I wake up?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMd-2p-LTo">
+                                <rect key="frame" x="81" y="359" width="213" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xW-4U-K71">
+                                <rect key="frame" x="130" y="420" width="115" height="39"/>
+                                <color key="backgroundColor" red="0.018477259199999999" green="0.39085769650000002" blue="0.92403107880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="😴😴😴"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="09h-tr-IT7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXm-ia-iaH">
+                                <rect key="frame" x="128" y="283" width="119" height="39"/>
+                                <color key="backgroundColor" red="0.018477259199999999" green="0.39085769650000002" blue="0.92403107880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.1051776782" green="0.0002075638622" blue="0.5988102555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="computeSuggestionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XS0-Xj-AgH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="___:___" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="flB-Vr-kdV">
+                                <rect key="frame" x="129" y="229" width="117" height="46"/>
+                                <color key="backgroundColor" red="0.082754306499999999" green="0.0124966139" blue="0.4791858792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="When should I go to bed if I have to wake up at..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e3-EJ-QIk">
+                                <rect key="frame" x="61" y="168" width="253" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NapClock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rB-Ay-AmX">
+                                <rect key="frame" x="98" y="78" width="179" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="flB-Vr-kdV" secondAttribute="trailing" constant="129" id="3Wf-iy-Pdd"/>
+                            <constraint firstItem="flB-Vr-kdV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="5rZ-vf-MRX"/>
+                            <constraint firstItem="0xW-4U-K71" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="7Lg-0j-3nn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WMd-2p-LTo" secondAttribute="trailing" constant="81" id="8Fd-3Q-teN"/>
+                            <constraint firstItem="BXm-ia-iaH" firstAttribute="top" secondItem="flB-Vr-kdV" secondAttribute="bottom" constant="8" id="Fcw-jk-9xh"/>
+                            <constraint firstItem="flB-Vr-kdV" firstAttribute="top" secondItem="0e3-EJ-QIk" secondAttribute="bottom" constant="8" id="JBb-Jz-Tal"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0e3-EJ-QIk" secondAttribute="trailing" constant="61" id="NdR-gy-xHc"/>
+                            <constraint firstItem="0e3-EJ-QIk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="O61-s9-Dqh"/>
+                            <constraint firstItem="0xW-4U-K71" firstAttribute="top" secondItem="WMd-2p-LTo" secondAttribute="bottom" constant="8" id="Tyt-cN-ZI8"/>
+                            <constraint firstItem="BXm-ia-iaH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="UAR-Qq-d2K"/>
+                            <constraint firstItem="0e3-EJ-QIk" firstAttribute="top" secondItem="1rB-Ay-AmX" secondAttribute="bottom" constant="36" id="bvi-FE-1XR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BXm-ia-iaH" secondAttribute="trailing" constant="128" id="geY-u2-bWi"/>
+                            <constraint firstItem="WMd-2p-LTo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="jVW-Ax-3Jc"/>
+                            <constraint firstItem="1rB-Ay-AmX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oXw-Jc-lnP"/>
+                            <constraint firstItem="1rB-Ay-AmX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-228.5" id="t7s-20-jbl"/>
+                            <constraint firstItem="WMd-2p-LTo" firstAttribute="top" secondItem="BXm-ia-iaH" secondAttribute="bottom" constant="37" id="tmr-Af-1ZG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0xW-4U-K71" secondAttribute="trailing" constant="130" id="zmv-L1-vtV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="timeTextField" destination="flB-Vr-kdV" id="EYa-5M-qjR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
